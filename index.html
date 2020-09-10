@@ -7,15 +7,13 @@
 <h2 align="center">KY-018 Фоторезистор</h2>
 
 <table>
-	<table border 1 cellpadding="0" cellspacing="0" align="center">
-<tr><td colspan="3" rowspan="2" height="150px" width="250px" align="center"><h4>Фото модуля</h4><p><img src="photo4.jpg" width="300px" height="300px"></p></td><td colspan="3" rowspan="2" width="250" height="150" align="center"><h4>Схема подключения</h4><p><img src="photo5.jpg" width="300px" height="300px"></p></td></tr>
-<tr></tr>
-<tr><td colspan="6" rowspan="2" height="100" width="500px" align="center"><h4>Краткое описание модуля
+	<table cellpadding="10" cellspacing="10" align="center">
+<tr><td height="150px" width="250px" style="border-style: solid"><h4>Фото модуля</h4><p><img src="photo4.jpg" width="300px"></p></td><td width="250" height="150" style="border-style: solid"><h4>Схема подключения</h4><p><img src="photo5.jpg" width="300px" height="300px"></p></td></tr>
+<tr><td colspan="2" height="100" width="500px" align="center" style="border-style:dashed"><h4>Краткое описание модуля
 “KY-018″</h4> — модуль содержит фоторезистор (датчик освещенности), который может применяться для измерения интенсивности света или определения его наличия/отсутствия. При отсутствии света сопротивление фоторезистора большое и доходит до 1 мОм, а при его освещении падает до нескольких Ом. Фоторезисторы – это полупроводниковые фоточувствительные устройства (сенсоры),
 
 которые имеют высокую чувствительность, быстрый отклик, устойчивые спектральные характеристики и широко применяются в видеокамерах, в садовых светильниках на солнечных батареях, датчиках освещенности, ночниках и других устройствах контроля освещения.</td></tr>
-<tr></tr>
-<tr><td colspan="6" rowspan="6" align="center"> 
+<tr><td colspan="2" align="center" style="border-style:dashed"> 
 <h4>Код программы для подключения к Arduino</h4><br>
 
 int sensorPin = 2; //define analog pin 2<br>
@@ -30,14 +28,7 @@ void loop() {<br>
 	// low values for dark environment
 	delay(100);<br>
 }
-            
-            </td></tr>
-<tr></tr>
-<tr></tr>
-<tr></tr>
-<tr></tr>
-<tr></tr>
-<tr><td colspan="6" rowspan="2"align="center"><h4>Источники :</h4> <br>
+<tr><td colspan="2" align="center" style="border-style:dashed"><h4>Источники :</h4> <br>
  <p><a href="https://umnyjdomik.ru/ky-018-svetochuvstvitelnyj-modul-s-fotorezistorom.html">1.Источник информации</a></p><br>
 <p><a href="https://arduinomodules.info/download/ky-018-photoresistor-module-zip-file/">2.Сайт с библиотекой</a></p>
 </td></tr>
@@ -47,15 +38,15 @@ void loop() {<br>
 <h2 align="left">Датчик для избегания препятствий KY-032 </h2><h2 align="right">Датчик вибрации</h2>
 
 <table>
-	<table border 1 cellpadding="0" cellspacing="0" align="left">
-<tr><td colspan="3" rowspan="2" height="150px" width="250px" align="center"><h4>Фото модуля</h4><p><img src="photo1.jpg" width="300px" height="300px"></p></td><td colspan="3" rowspan="2" width="250" height="150" align="center"><h4>Схема подключения</h4><p><img src="photo2jpg.jpg" width="300px" height="300px"></p></td></tr>
-<tr></tr>
-<tr><td colspan="6" rowspan="2" height="100" width="500px" align="center"><h4>Краткое описание модуля
+	<table cellpadding="10" cellspacing="10" align="left">
+<tr><td height="150px" width="250px" align="center" style="border-style: solid"><h4>Фото модуля</h4><p><img src="photo1.jpg" width="300px" ></p></td><td width="250" height="150" align="center" style="border-style: solid"><h4>Схема подключения</h4><p><img src="photo2jpg.jpg" width="300px"></p></td></tr>
+
+<tr><td colspan="2" height="100" width="500px" align="center" style="border-style:dashed"><h4>Краткое описание модуля
 “KY-032”</h4> – модуль представляет собой инфракрасный датчик обнаружения препятствий. Устройство имеет передатчик (IR LED), излучающий инфракрасный луч частотой 38 кГц, который принимается приемником (IR receiver) на плате. При приближении какого-либо предмета к сенсору (близость регулируется потенциометром) на выходе
 
 “OUT” появляется низкий уровень напряжения и включается светодиод на плате модуля.</td></tr>
-<tr></tr>
-<tr><td colspan="6" rowspan="6" align="center"> 
+
+<tr><td colspan="2" align="center" style="border-style:dashed"> 
 <h4>Код программы для подключения к Arduino</h4><br>
 
            
@@ -80,14 +71,8 @@ void loop() {<br>
   digitalWrite( enablePin, LOW);      //Выключить внутренний сигнал 38kHz
             
             
-            
-            </td></tr>
-<tr></tr>
-<tr></tr>
-<tr></tr>
-<tr></tr>
-<tr></tr>
-<tr><td colspan="6" rowspan="2"align="center"><h4>Источники :</h4> <br>
+</td>
+<tr><td colspan="2" align="center" style="border-style:dashed"><h4>Источники :</h4> <br>
  <p><a href="https://umnyjdomik.ru/ky-032-modul-s-infrakrasnym-datchikom-obnaruzheniya-prepyatstvij-dlya-arduino.html">1.Источник информации</a></p><br>
 <p><a href="https://create.arduino.cc/projecthub/vandenbrande/obstacle-avoidance-with-the-ky-032-9af0a7">2.Сайт с библиотекой</a></p>
 </td></tr>
@@ -95,10 +80,10 @@ void loop() {<br>
 </table>
 
 <table>
-	<table border 1 cellpadding="0" cellspacing="0" align="right">
-<tr><td colspan="3" rowspan="2" height="150px" width="250px" align="center"><h4>Фото модуля</h4><p><img src="photo3.jpg" width="300px" height="300px"></p></td><td colspan="3" rowspan="2" width="250" height="150" align="center"><h4>Схема подключения</h4><p><img src="photo11.jpg" width="300px" height="300px"></p></td></tr>
+	<table cellpadding="10" cellspacing="10" align="right">
+<tr><td align="center" style="border-style: solid"><h4>Фото модуля</h4><p><img src="photo3.jpg" width="300px"></p></td><td  align="center" style="border-style: solid"><h4>Схема подключения</h4><p><img src="photo11.jpg" width="300px"></p></td></tr>
 <tr></tr>
-<tr><td colspan="6" rowspan="2" height="100" width="500px" align="center"><h4>Краткое описание модуля
+<tr><td colspan="2" height="100" width="500px" align="center" style="border-style:dashed"><h4>Краткое описание модуля
 “Датчик вибрации”</h4> Основной элемент датчика – металлическая пружина гибкой структуры, расположенная во внутренней части трубки из пластика. При наличии каких-либо воздействий на нее она начинает колебаться. Усиление сигнала происходит за счет его подачи сначала на операционный усилитель, а потом на выход аналогового типа. Важным элементом датчика вибрации является потенциометр, который регулирует чувствительность прибора, и позволяет устанавливать необходимый порог срабатывания.
 Датчик вибрации имеет три выхода:
 • Земля;
@@ -110,7 +95,7 @@ void loop() {<br>
 В состоянии покоя модуль находится в разомкнутом состоянии, и протекания тока по нему нет. При наличии внешних вибрационных воздействий за счет раскачивания пружины происходит кратковременное замыкание контактов. В результате происходит сработка датчика, и на выходе появляется логический 0.
 Срабатывание датчика происходит в независимости от его пространственного расположения. Технические параметры датчиков вибрации для Ардуино (могут отличаться в зависимости от модели устройства): • Питающее напряжение от 3 до 5 В; • Ток потребления 4-5мА; • С наличием или отсутствием цифрового выхода; • С наличием или отсутствием регулировки чувствительности. Датчики могут отличаться по весу и габаритам, но обязательно содержат монтажное отверстие для крепления к плате</td></tr>
 <tr></tr>
-<tr><td colspan="6" rowspan="6" align="center"> 
+<tr><td colspan="2" align="center" style="border-style:dashed"> 
 <h4>Код программы для подключения к Arduino</h4><br>
 
            
@@ -140,13 +125,8 @@ void loop() {<br>
 
 }      
             
-            </td></tr>
-<tr></tr>
-<tr></tr>
-<tr></tr>
-<tr></tr>
-<tr></tr>
-<tr><td colspan="6" rowspan="2"align="center"><h4>Источники :</h4> <br>
+</td>
+<tr><td colspan="2" align="center" style="border-style:dashed"><h4>Источники :</h4> <br>
  <p><a href="https://arduinomaster.ru/datchiki-arduino/datchik-vibratsii-arduino/">1.Источник информации</a></p><br>
 <p><a href="https://xn--18-6kcdusowgbt1a4b.xn--p1ai/%D0%B4%D0%B0%D1%82%D1%87%D0%B8%D0%BA-%D0%B2%D0%B8%D0%B1%D1%80%D0%B0%D1%86%D0%B8%D0%B8-%D0%B0%D1%80%D0%B4%D1%83%D0%B8%D0%BD%D0%BE/">2.Сайт с библиотекой</a></p>
 </td></tr>
